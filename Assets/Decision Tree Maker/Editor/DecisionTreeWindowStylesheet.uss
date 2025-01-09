@@ -1,0 +1,57 @@
+GridBackground {
+    --grid-background-color: rgb(40, 40, 40);
+    --line-color: rgba(193, 196, 192, 0.1);
+    --thick-line-color: rgba(193, 196, 192, 0.1);
+    --spacing: 15;
+}
+
+.tab {
+    -unity-text-align: middle-center;
+    border-top-width: 0.3px;
+    border-right-width: 0.3px;
+    border-left-width: 0.3px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-color: rgb(30, 30, 30);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(63, 63, 63);
+    padding: 0;
+}
+
+.unselectedTab {
+    -unity-text-align: middle-center;
+    border-width: 0.3px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-color: rgb(30, 30, 30);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(99, 99, 99);
+    padding: 0;
+}
+
+.emptyListLabel {
+    border-top-width: 0.3px;
+    border-bottom-width: 0.3px;
+    border-color: rgb(30, 30, 30);
+    height: 30px;
+    -unity-text-align: middle-left;
+    padding-left: 10px;
+}
+
+.actionListItem {
+    border-top-width: 0.3px;
+    border-bottom-width: 0.3px;
+    border-color: rgb(30, 30, 30);
+    height: 30px;
+    padding-left: 10px;
+}
+
+.searchFieldPanel {
+    margin-top: 10px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    flex-shrink: 1;
+}

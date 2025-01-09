@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Decision%20Tree%20Maker/Editor/DecisionTreeWindowStylesheet.uss?fileID=7433441132597879392&amp;guid=a47fc228cf4812b4586872d40ec3de5b&amp;type=3#DecisionTreeWindowStylesheet" />
+    <ui:VisualElement style="flex-grow: 1; flex-shrink: 1; flex-direction: row; justify-content: space-around; align-items: stretch; flex-wrap: nowrap; background-color: rgba(0, 0, 0, 0);">
+        <SplitView fixed-pane-index="1" fixed-pane-initial-dimension="350">
+            <ui:VisualElement name="left_panel" style="flex-grow: 1;">
+                <Decision_Tree_Maker.Editor.GridField focusable="true" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="right-panel" style="min-width: 200px;">
+                <SplitView orientation="Vertical">
+                    <ui:VisualElement name="top-panel">
+                        <ui:VisualElement name="inspector-panel" style="flex-grow: 1;">
+                            <ui:VisualElement name="tabsContainer" style="height: 21px; flex-direction: row; justify-content: space-around; border-bottom-color: rgb(0, 0, 0); margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; background-color: rgb(47, 47, 47);">
+                                <ui:Label text="Parameters" display-tooltip-when-elided="true" name="parameters-tab" class="tab" />
+                                <ui:Label text="Actions" display-tooltip-when-elided="true" name="actions-tab" class="unselectedTab" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="inspector-content" style="flex-grow: 1; background-color: rgb(63, 63, 63); height: 20px;">
+                                <ui:VisualElement name="list" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="action-panel" style="flex-grow: 1; visibility: visible; display: none;">
+                            <ui:VisualElement name="header" style="background-color: rgb(41, 40, 40); height: 30px; border-bottom-width: 1px; align-items: center; justify-content: space-around; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgb(89, 89, 89); border-right-color: rgb(89, 89, 89); border-top-color: rgb(89, 89, 89); border-bottom-color: rgb(89, 89, 89); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px;">
+                                <ui:Label text="ACTION" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="node-info" style="flex-grow: 1;">
+                                <ui:TextField picking-mode="Ignore" label="Name" text="Node Name" />
+                                <ui:Label text="Input -----&gt; Decision Node" display-tooltip-when-elided="true" />
+                                <ui:Label text="Behavior" display-tooltip-when-elided="true" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="bottom-panel" />
+                </SplitView>
+            </ui:VisualElement>
+        </SplitView>
+    </ui:VisualElement>
+</ui:UXML>

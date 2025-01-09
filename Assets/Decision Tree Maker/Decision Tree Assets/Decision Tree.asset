@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c166588b74b24535a73f0b4c6c49cfb5, type: 3}
+  m_Name: Decision Tree
+  m_EditorClassIdentifier: 
+  nodes:
+  - id: 08dc62ab-59cb-4b4b-8307-620b67ba13f2
+    description: 
+    type: 2
+    position: {x: 203, y: 77.88}
+  - id: 61aab70d-afb1-4158-968d-013fcc670431
+    description: 
+    type: 0
+    position: {x: 201, y: 197}
+  - id: 33c7e6be-00f0-43fc-9423-84740421b8c5
+    description: 
+    type: 0
+    position: {x: 142, y: 435}
+  - id: 54c7d6a2-264c-41cb-8c5a-eb5c49a43f54
+    description: 
+    type: 1
+    position: {x: 118, y: 670}
+  - id: bd800457-3f2f-4930-ade2-ce9b1a425bee
+    description: 
+    type: 1
+    position: {x: 270, y: 702}
+  - id: 7758e713-032d-4291-b25a-3af3fbc24eb9
+    description: 
+    type: 1
+    position: {x: 173, y: 884}
+  - id: 8b413d17-fcb6-401e-bef6-b20b50e21597
+    description: Some description...
+    type: 0
+    position: {x: 496, y: 508}
+  edges:
+  - id: 5d1cf9d3-188b-48d0-929c-21372fbbfab7
+    input:
+      nodeId: 61aab70d-afb1-4158-968d-013fcc670431
+      name: Input
+    output:
+      nodeId: 08dc62ab-59cb-4b4b-8307-620b67ba13f2
+      name: Output
+  - id: 9f153443-5c11-4fba-9de3-1bd7daf2d07d
+    input:
+      nodeId: 33c7e6be-00f0-43fc-9423-84740421b8c5
+      name: Input
+    output:
+      nodeId: 61aab70d-afb1-4158-968d-013fcc670431
+      name: True
+  - id: 427eb120-adcf-4b1c-80f8-c1721f24fe84
+    input:
+      nodeId: 54c7d6a2-264c-41cb-8c5a-eb5c49a43f54
+      name: Input
+    output:
+      nodeId: 33c7e6be-00f0-43fc-9423-84740421b8c5
+      name: True
+  - id: 80b110cd-593f-4d65-89c1-b4073f5a033b
+    input:
+      nodeId: bd800457-3f2f-4930-ade2-ce9b1a425bee
+      name: Input
+    output:
+      nodeId: 33c7e6be-00f0-43fc-9423-84740421b8c5
+      name: False
+  - id: d365dd0e-30e1-4a0e-a2ae-4890d49a4bdd
+    input:
+      nodeId: 8b413d17-fcb6-401e-bef6-b20b50e21597
+      name: Input
+    output:
+      nodeId: 61aab70d-afb1-4158-968d-013fcc670431
+      name: False
